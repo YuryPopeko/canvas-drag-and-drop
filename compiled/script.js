@@ -223,7 +223,7 @@ function () {
 
 var canvas = new Canvas(document.querySelector('canvas'));
 canvas.addFigure(0, 0, 200, 10, 200, 55, 100, 100);
-canvas.addFigure(0, 0, 200, 10, 200, 55, 100, 100);
+canvas.addFigure(0, 0, 140, 0, 10, 100, 50, 30);
 canvas.addFigure(0, 0, 200, 75, 105, 140);
 canvas.addFigure(0, 0, 120, 0, 120, 100, 0, 100);
 canvas.start();
