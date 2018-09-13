@@ -50,7 +50,7 @@ function () {
 
       for (var i = 0; i < figuresLength; i++) {
         for (var j = i + 1; j < figuresLength; j++) {
-          if (_this.isIntersect(_this.figures[i], _this.figures[j])) {
+          if (_this.isIntersect(_this.figures[i], _this.figures[j]) || _this.isIntersect(_this.figures[j], _this.figures[i])) {
             _this.figures[i].fill = _this.figures[j].fill = true;
           }
         }

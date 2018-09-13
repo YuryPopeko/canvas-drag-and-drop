@@ -42,7 +42,8 @@ class Canvas {
 			const figuresLength = this.figures.length;
 			for (let i = 0; i < figuresLength; i++) {
 				for (let j = i + 1; j < figuresLength; j++) {
-					if (this.isIntersect(this.figures[i], this.figures[j])) {
+					if (this.isIntersect(this.figures[i], this.figures[j]) ||
+						this.isIntersect(this.figures[j], this.figures[i])) {
 						this.figures[i].fill = this.figures[j].fill = true
 					}
 				}
